@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>My Website</title>
+      <link href="style2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+      <div id="tabs">HOME | ABOUT ME | GITHUB | LINKEDIN</h> <!--This aligns the text to the right corner in the css--!> </div>
+        
+
+      <h1>Micheal Fahim's Website</h1><br><br>
+      <img src= "C:\Users\MICHE\Desktop\CS115\WIN_20180312_13_43_41_Pro (2).jpg">
+      <h2>About Me</h2>
+<hr class="Line" > </hr>
+  
+      
+      
+
+      <h3 class= "Top">Who Am I</h3>
+<center><p id="me" onClick="myAge()">Click For My Age </p></center>
+      
+      <p> 
+      Hello, I am Micheal Fahim. I am getting a software engineering degree at Stevens Institute of Technology.<br>
+      I have a passion for computers and cars I am hoping that one day I will create something great to help the world.<br> 
+      A lot of people say that it is nearly impossible to make something that helps everyone, I disagree, think<br>
+      of the cell phone, nearly everyone uses that.<br>
+      </p>
+      <br><br><br>
+
+
+
+      <h4 id="First" ><span>Things I Like To Do</span></h4>
+      <ul>
+      	<li>Code</li>
+      	<li>Play Soccer</li>
+      	<li>Play Guitar</li>
+      	<li>Workout</li><br><br>
+      </ul>
+
+      <h4 class= "second" ><span>Companies I Am Interested In</span></h4>
+      <ul>
+      	<li>Google</li>
+      	<li>Amazon</li>
+      	<li>Facebook</li>
+      	<li>Tesla</li><br><br>
+      </ul>
+
+      <h4 class="third"><span>Some Courses I Have Taken</span></h4>
+      <table>
+	 
+	        <tr><td><strong>Course Name</strong></td>
+		<td><strong>Course Name</strong></td></tr>
+                <tr><td> CS115 </td> <td>Intro. To Computer Science</td></tr>
+                <tr><td> E115 </td> <td>Intro. To Programming</td></tr>
+		<tr><td> E245 </td> <td>Circuits and Systems</td></tr>
+       </table><br>
+
+
+        <h4 class="cars"><span>Here Are Some Of The Cars I Like</h4>
+        <center> <p1 id="car_button" onClick="carButton()">[Guess My Favorite Car(CLICK ME!)] </p1> </center>
+        
+        <img src="https://cdn2.autoexpress.co.uk/sites/autoexpressuk/files/styles/3x2_960/public/2018/01/8_laferrari.jpg?itok=ufJlkcu5">
+        <img src="https://ex-summer.net/wp-content/uploads/2018/09/27160928-AgeraRS_resized_1600x1000.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Tesla_roadster_2020_prototype.jpg"><br><br>
+
+	<div id="footer"> Copyright &copy; 2019 Micheal Fahim. </div>
+
+<script type="text/javascript">
+
+    var design= document.querySelector("h2");
+    design.style.color= "green"
+
+
+    var x = document.getElementsByClassName("cars");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.color = "red";
+  }
+    
+  
+
+    var x = document.getElementsByTagName("h1");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.color = "red";
+  }
+
+
+    function myAge(){
+        var age= document.getElementById("me");
+        age.innerHTML="19!";
+        document.getElementById("me").style.color = "red";
+    }
+    function carButton(){
+        var color= document.getElementById("car_button");
+        color.innerHTML="My favorite car is the Koenigsegg Agera RS (The second Car)!";
+        document.getElementById("car_button").style.color = "red";
+    }
+
+
+</script>
+
+</body>
+
+</html>

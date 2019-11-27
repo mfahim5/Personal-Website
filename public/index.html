@@ -1,106 +1,211 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-      <title>My Website</title>
-      <link href="style2.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-      <div id="tabs">HOME | ABOUT ME | GITHUB | LINKEDIN</h> <!--This aligns the text to the right corner in the css--!> </div>
-        
-
-      <h1>Micheal Fahim's Website</h1><br><br>
-      <img src= "C:\Users\MICHE\Desktop\CS115\WIN_20180312_13_43_41_Pro (2).jpg">
-      <h2>About Me</h2>
-<hr class="Line" > </hr>
-  
-      
-      
-
-      <h3 class= "Top">Who Am I</h3>
-<center><p id="me" onClick="myAge()">Click For My Age </p></center>
-      
-      <p> 
-      Hello, I am Micheal Fahim. I am getting a software engineering degree at Stevens Institute of Technology.<br>
-      I have a passion for computers and cars I am hoping that one day I will create something great to help the world.<br> 
-      A lot of people say that it is nearly impossible to make something that helps everyone, I disagree, think<br>
-      of the cell phone, nearly everyone uses that.<br>
-      </p>
-      <br><br><br>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Mfahim </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
 
 
+ 
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-      <h4 id="First" ><span>Things I Like To Do</span></h4>
-      <ul>
-      	<li>Code</li>
-      	<li>Play Soccer</li>
-      	<li>Play Guitar</li>
-      	<li>Workout</li><br><br>
-      </ul>
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-      <h4 class= "second" ><span>Companies I Am Interested In</span></h4>
-      <ul>
-      	<li>Google</li>
-      	<li>Amazon</li>
-      	<li>Facebook</li>
-      	<li>Tesla</li><br><br>
-      </ul>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-      <h4 class="third"><span>Some Courses I Have Taken</span></h4>
-      <table>
-	 
-	        <tr><td><strong>Course Name</strong></td>
-		<td><strong>Course Name</strong></td></tr>
-                <tr><td> CS115 </td> <td>Intro. To Computer Science</td></tr>
-                <tr><td> E115 </td> <td>Intro. To Programming</td></tr>
-		<tr><td> E245 </td> <td>Circuits and Systems</td></tr>
-       </table><br>
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/FullSizeRender.JPEG);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(images/FullSizeRender1.JPEG);"></div>
+							<h1><span>Micheal Fahim</span></h1>
+							<h3><span>Software Engineering Student at Stevens Institute of Technology</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+                                    
+									<li><a href="https://www.linkedin.com/in/micheal-fahim-225831146/"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="https://github.com/mfahim5"><i class="icon-github" ></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Micheal Fahim</span></li>
+<!--						<li><span class="first-block">Phone:</span><span class="second-block"></span></li>-->
+						<li><span class="first-block">Email:</span><span class="second-block">mfahim@stevens.edu</span></li>
+						<li><span class="first-block">Website:</span><span class="second-block">www.michealfahim.com</span></li>
+<!--						<li><span class="first-block">Address:</span><span class="second-block"></span></li>-->
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<h2>Background</h2>
+					<p>Hello, I am Micheal Fahim. I am pursuing a software engineering degree at Stevens Institute of Technology.
+I have a passion for computers and cars. I have experience programming  and I am highly motivated to expanding my knowledge.
 
-        <h4 class="cars"><span>Here Are Some Of The Cars I Like</h4>
-        <center> <p1 id="car_button" onClick="carButton()">[Guess My Favorite Car(CLICK ME!)] </p1> </center>
-        
-        <img src="https://cdn2.autoexpress.co.uk/sites/autoexpressuk/files/styles/3x2_960/public/2018/01/8_laferrari.jpg?itok=ufJlkcu5">
-        <img src="https://ex-summer.net/wp-content/uploads/2018/09/27160928-AgeraRS_resized_1600x1000.jpg">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Tesla_roadster_2020_prototype.jpg"><br><br>
+</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="https://github.com/mfahim5"><i class="icon-github"></i></a></li>
+<!--							<li><a href="#"><i class="icon-facebook3"></i></a></li>-->
+							<li><a href="https://www.linkedin.com/in/micheal-fahim-225831146/"><i class="icon-linkedin2"></i></a></li>
+<!--							<li><a href="#"><i class="icon-dribbble2"></i></a></li>-->
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<div id="footer"> Copyright &copy; 2019 Micheal Fahim. </div>
+	<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>My Resume</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Work Experience</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">IT Technician</h3>
+									<span class="company">Wisdom Pharmacy - 2016 - 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>Monitored and executed the pharmacy’s software platform that is used for the prescriptions. </p>
+								</div>
+							</div>
+						</li>
+						
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelors of Engineering in Software</h3>
+									<span class="company">Stevens Institute of Technology - 2017-2021</span>
+								</div>
+								<div class="timeline-body">
+									<p>Currently a junior at Stevens, expected to graduate May 2021.</p>
+								</div>
+							</div>
+						</li>
+						
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
-<script type="text/javascript">
+	
 
-    var design= document.querySelector("h2");
-    design.style.color= "green"
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>HTML5</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="93"><span><strong>CSS3</strong>90%</span></div>
+				</div>
+				
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="80"><span><strong>Java</strong>80%</span></div>
+				</div>
+                <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="80"><span><strong>Python</strong>80%</span></div>
+				</div>
+			</div>
+			
+				
+	
 
+	
+	
+	
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p> <center>&copy;Micheal Fahim. All Rights Reserved. </center> </p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    var x = document.getElementsByClassName("cars");
-    var i;
-    for (i = 0; i < x.length; i++) {
-       x[i].style.color = "red";
-  }
-    
-  
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
 
-    var x = document.getElementsByTagName("h1");
-    var i;
-    for (i = 0; i < x.length; i++) {
-       x[i].style.color = "red";
-  }
-
-
-    function myAge(){
-        var age= document.getElementById("me");
-        age.innerHTML="19!";
-        document.getElementById("me").style.color = "red";
-    }
-    function carButton(){
-        var color= document.getElementById("car_button");
-        color.innerHTML="My favorite car is the Koenigsegg Agera RS (The second Car)!";
-        document.getElementById("car_button").style.color = "red";
-    }
-
-
-</script>
-
-</body>
-
+	</body>
 </html>
+
